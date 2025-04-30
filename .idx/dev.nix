@@ -18,7 +18,7 @@
       enable = true;
       previews = {
         web = {
-          command = ["php" "-S" "0.0.0.0:$PORT" "index.php"];
+          command = ["php" "-S" "0.0.0.0:$PORT" "-t" "."];
           manager = "web";
         };
       };
@@ -26,7 +26,7 @@
     workspace = {
       onCreate = {
         # Open editors for the following files by default, if they exist:
-        default.openFiles = ["pages/startseite.php"];
+        default.openFiles = ["pages/index.php"];
       };
       # Runs when a workspace is (re)started
       #onStart= {

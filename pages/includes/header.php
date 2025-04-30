@@ -4,23 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Payment Projekt</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
 <body>
-
-<nav class="main-nav">
-    <div class="nav-desktop">
-        <a href="/index.php">Startseite</a>
-        <a href="/seite1.php">Vorteile</a>
-        <a href="/seite2.php">Nachteile</a>
+<div class="navigation">
+    <span class="logo">*LOGO*</span>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-label">☰ Menü</label>
+    <div class="nav-links">
+        <a href="/"><div>Startseite</div></a>
+        <a href="definition.php"><div>Definition</div></a>
+        <a href="vor_und_nachteile.php"><div>Vor- und Nachteile</div></a>
+        <a href="arten.php"><div>Arten</div></a>
+        <a href="funktionsweise.php"><div>Funktionsweise</div></a>
     </div>
-
-    <div class="nav-mobile">
-        <button id="menu-toggle">Menü</button>
-        <div id="mobile-menu" class="hidden">
-            <a href="/index.php">Startseite</a>
-            <a href="/seite1.php">Vorteile</a>
-            <a href="/seite2.php">Nachteile</a>
-        </div>
-    </div>
-</nav>
+</div>
