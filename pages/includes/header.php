@@ -16,6 +16,7 @@
         <a href="definition.php"><div>Definition</div></a>
         <a href="vor_und_nachteile.php"><div>Vor- und Nachteile</div></a>
         <a href="arten.php"><div>Arten</div></a>
+        <a href="sicherheit.php"><div>Sicherheit</div></a>
         <a href="funktionsweise.php"><div>Funktionsweise</div></a>
     </div>
 </div>
