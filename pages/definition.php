@@ -4,7 +4,7 @@
             <summary><b>Definition:</b></summary>
             <p>E-payment:Auch elektronischer Zahlungsverkehr genannt, erfolgt bargeldlos,werden durch Transaktionen abgewickelt</p>
         </details>
-        <table>
+        <table class="def">
             <tr>
                 <th colspan="2">Zahlungsformen im Alltag</th>
             </tr>
@@ -33,7 +33,8 @@
           <td>Fahrkarten/Parkticket</td>
       </tr>
         </table>
-        <table>
+
+        <table class="def">
           <tr>
             <td colspan="2">Trends und Entwicklungen</td>
           <tr>

@@ -8,9 +8,18 @@
 </head>
 <body>
 <div class="navigation">
-    <span class="logo">*LOGO*</span>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="menu-label">☰ Menü</label>
+    <table>
+        <tr>
+            <td><img class="logo-desktop" src="/assets/pic/E-Payment-removebg-preview.png" alt="logo"></td>
+            <td><input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-label">
+        <table>
+            <tr>
+                <td><img class="logo-mobile" src="/assets/pic/E-Payment-removebg-preview.png" alt="logo"></td>
+                <td>☰</td>
+            </tr>
+        </table>
+    </label>
     <div class="nav-links">
         <a href="/"><div>Startseite</div></a>
         <a href="pages/definition.php"><div>Definition</div></a>

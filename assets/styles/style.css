@@ -1,33 +1,49 @@
 
-body{
-    background-color: rgb(76, 110, 201); 
-}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #5271ff;
+    color: #333;
+  }
 
 .navigation {
-    background-color: rgb(122, 152, 212);
-    border: 2px solid black;
-    padding: 10px;
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    color: #5271ff; 
 }
 
-.navigation .logo {
-    font-weight: bold;
-    font-size: 20px;
+.logo-desktop {
+    height: 40px;
+    display: inline;
+}
+
+.logo-mobile {
+    height: 40px;
+    display: none;
 }
 
 .nav-links {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-}
-
-.nav-links a div {
-    background-color: rgb(0, 124, 83);
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin: 0 4px;
     color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
     font-family: Arial;
     text-align: center;
 }
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+    background-color:#5271ff ;
+}
+
+.nav-links a div{
+    padding: 5px 10px;
+}
+
 .nav-links a div:hover {
     background-color: rgb(1, 175, 117);
 }
@@ -42,11 +58,14 @@ body{
 
 .menu-label {
     display: none;
-    cursor: pointer;
-    background-color: #333;
-    color: white;
-    padding: 10px;
+    cursor: pointer;;
+    color: rgb(0, 0, 0);
     border-radius: 5px;
+    font-size: large;
+}
+
+.menu-label table tr td:first-child{
+    padding-right: 10rem;
 }
 
 /* Мобильные стили */
@@ -62,16 +81,20 @@ body{
     .menu-toggle:checked + .menu-label + .nav-links {
         display: flex;
     }
+    .logo-desktop{
+        display: none;
+    }
+    .logo-mobile{
+        display: inline;
+    }
 }
 
-.body{
-    width: 100%;
-    height: 2000px;
-    border: 2px solid black;
-    margin-bottom: 0.5%;
-
-    background-color: white;
-}
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
 
 .footer{
     width: 100%;
@@ -110,3 +133,122 @@ body{
     border: 1px solid #000000;
     border-radius: 20px;
 }
+
+.einleitung {
+    flex: 1 1 55%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    width: 60% ;
+  }
+
+  .einleitung h1, .einleitung h2 {
+    margin-top: 0;
+  }
+
+  .sidebar {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .verfahren {
+    margin-top: 20px;
+  }
+
+  .verfahren h3 {
+    color: #5271ff;
+  }
+
+  .verfahren ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+  .vorteil {
+    color: #0077aa;
+  }
+
+  .hinweis {
+    font-style: italic;
+    color: #b30000;
+  }
+
+  details {
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    margin-bottom: 10px;
+  }
+  
+  summary {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .tip {
+    color: #0077aa;
+    font-style: italic;
+  }
+
+  .example {
+    padding: 8px;
+    border-left: 4px solid #4caf50;
+    margin-top: 8px;
+  }
+
+
+    .bar-chart {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+      }
+
+    .bar-chart li {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .bar {
+        height: 25px;
+        background-color: #4CAF50;
+        color: white;
+        line-height: 25px;
+        font-size: 14px;
+        text-align: center;
+        border-radius: 5px;
+        padding-right: 10px;
+        box-sizing: border-box;
+    }
+
+.def{
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.def th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.def th {
+  background-color: #5271ff;
+  color: white;
+}
+
+.footer {
+  height: 50px;
+}
+
+footer{
+  color: white;
+  padding: 10px;
+}    
