@@ -6,14 +6,17 @@ body {
     color: #333;
   }
 
-.navigation {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
     background-color: #f9f9f9;
-    padding: 10px 20px;
-    color: #5271ff; 
-}
+    flex-wrap: wrap;
+  }
 
 .logo-desktop {
-    height: 40px;
+    height: 50px;
     display: inline;
 }
 
@@ -38,6 +41,7 @@ body {
     text-decoration: none;
     color: inherit;
     background-color:#5271ff ;
+    border-radius: 8px;
 }
 
 .nav-links a div{
@@ -46,9 +50,11 @@ body {
 
 .nav-links a div:hover {
     background-color: rgb(1, 175, 117);
+    border-radius: 8px;
 }
 .nav-links a div:active {
     background-color: rgb(0, 133, 88);
+    border-radius: 8px;
 }
 
 /* Мобильная кнопка меню */
@@ -61,40 +67,20 @@ body {
     cursor: pointer;;
     color: rgb(0, 0, 0);
     border-radius: 5px;
-    font-size: large;
 }
 
 .menu-label table tr td:first-child{
     padding-right: 10rem;
 }
 
-/* Мобильные стили */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        margin-top: 10px;
-    }
-    .menu-label {
-        display: block;
-    }
-    .menu-toggle:checked + .menu-label + .nav-links {
-        display: flex;
-    }
-    .logo-desktop{
-        display: none;
-    }
-    .logo-mobile{
-        display: inline;
-    }
-}
-
-.body {
+.menu-container {
+    gap: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-  }
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
 
 .footer{
     width: 100%;
@@ -105,11 +91,22 @@ body {
 }
 .definition{
     width: 97%;
-    height: 80px;
+    height: auto;
     border: 2px solid black;
     margin: 1%;
     padding: 0.5%;
+    margin-top: 10px;
 }
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 5px;
+  }
 
 .body table{
     width: 98%;
@@ -138,117 +135,351 @@ body {
     flex: 1 1 55%;
     background-color: white;
     padding: 20px;
-    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
     width: 60% ;
-  }
+    border-radius: 8px;
+}
 
-  .einleitung h1, .einleitung h2 {
+.einleitung h1, .einleitung h2 {
     margin-top: 0;
-  }
+}
 
-  .sidebar {
+.sidebar {
     flex: 1 1 40%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
+}
 
-  .verfahren {
+.verfahren {
     margin-top: 20px;
-  }
+}
 
-  .verfahren h3 {
+.verfahren h3 {
     color: #5271ff;
-  }
+}
 
-  .verfahren ul {
+.verfahren ul {
     list-style-type: disc;
     margin-left: 20px;
-  }
+}
 
-  .vorteil {
+.vorteil {
     color: #0077aa;
-  }
+}
 
-  .hinweis {
+.hinweis {
     font-style: italic;
     color: #b30000;
-  }
+}
 
-  details {
+details {
     background-color: white;
     padding: 16px;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0,0,0,0.05);
     margin-bottom: 10px;
-  }
+}
   
-  summary {
+summary {
     font-weight: bold;
     cursor: pointer;
-  }
+}
 
-  .tip {
+.tip {
     color: #0077aa;
     font-style: italic;
-  }
+}
 
-  .example {
+.example {
     padding: 8px;
     border-left: 4px solid #4caf50;
     margin-top: 8px;
-  }
+}
 
 
-    .bar-chart {
-          list-style-type: none;
-          padding: 0;
-          margin: 0;
-      }
+.bar-chart {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-    .bar-chart li {
-        margin-bottom: 10px;
-        width: 100%;
-    }
+.bar-chart img{
+    width: 100%;
+}
 
-    .bar {
-        height: 25px;
-        background-color: #4CAF50;
-        color: white;
-        line-height: 25px;
-        font-size: 14px;
-        text-align: center;
-        border-radius: 5px;
-        padding-right: 10px;
-        box-sizing: border-box;
-    }
+.bar-chart li {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.bar {
+    height: 25px;
+    background-color: #4CAF50;
+    color: white;
+    line-height: 25px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
 
 .def{
-  width: 100%;
-  border-collapse: collapse;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  overflow: hidden;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    overflow: hidden;
 }
 
 .def th, td {
-  padding: 12px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
 .def th {
-  background-color: #5271ff;
-  color: white;
-}
-
-.footer {
-  height: 50px;
+    background-color: #5271ff;
+    color: white;
 }
 
 footer{
-  color: white;
-  padding: 10px;
+    color: white;
+    padding: 10px;
 }    
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.img-funk{
+    text-align: center;
+}
+
+.invisible-table{
+    border-collapse: collapse;
+}
+.content-container{
+    border-collapse: collapse;
+}
+.schritt1{
+    height: 170px;
+    width: 300px;
+    display: inline;
+}
+
+.advantages-section, .disadvantages-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #5271ff, #00b894);
+  }
+  
+  .advantages-title {
+    color: #2ecc71;
+  }
+  
+  .disadvantages-title {
+    color: #e74c3c;
+  }
+  
+  /* Сетка карточек */
+  .advantages-grid, .disadvantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* Стили карточек */
+  .advantage-card, .disadvantage-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .advantage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(46, 204, 113, 0.2);
+  }
+  
+  .disadvantage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(231, 76, 60, 0.2);
+  }
+  
+  /* Иконки */
+  .advantage-icon, .disadvantage-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .advantage-icon {
+    background-color: rgba(46, 204, 113, 0.1);
+    color: #2ecc71;
+  }
+  
+  .disadvantage-icon {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+  }
+  
+  /* Текст */
+  .advantage-title, .disadvantage-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .advantage-title {
+    color: #2ecc71;
+  }
+  
+  .disadvantage-title {
+    color: #e74c3c;
+  }
+  
+  .advantage-description, .disadvantage-description {
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
+  }
+
+  .table-scroll table {
+    min-width: 800px; /* ширина таблицы для активации скролла */
+    border-collapse: collapse;
+  }
+
+  .table-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .table-scroll::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+
+  .team-section {
+    background: #ffe144;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0px;
+  }
+
+  .team-title {
+    font-weight: bold;
+    color: #ff2aad;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .member {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1 1 200px;
+  }
+
+  .member h3 {
+    color: #5271ff;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  .member p {
+    font-size: 0.9rem;
+  }
+
+  .project-info {
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    color: #5271ff;
+    font-size: x-large;
+  }
+
+  /* Мобильные стили */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .menu-label {
+        display: block;
+    }
+    .menu-toggle:checked + .menu-label + .nav-links {
+        display: flex;
+    }
+    .logo-desktop{
+        display: inline;
+    }
+    .logo-mobile{
+        display: none;
+    }
+    .navigation{
+        justify-content: space-between;
+    }
+    .einleitung {
+        padding: 10px;
+    }
+    .body{
+        padding: 0%;
+    }
+    body{
+        font-size: x-large;
+    }
+    .einleitung h1, .einleitung h2 {
+        font-size: xx-large;
+    }
+    .advantages-grid, .disadvantages-grid {
+        grid-template-columns: 1fr;
+    }
+      
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .content-container {
+        padding: 0 10px;
+      }
+}

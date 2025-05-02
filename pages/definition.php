@@ -1,9 +1,11 @@
 <?php include("includes/header.php"); ?>
     <div class="body">
+      
         <details class="definition">
             <summary><b>Definition:</b></summary>
-            <p>E-payment:Auch elektronischer Zahlungsverkehr genannt, erfolgt bargeldlos,werden durch Transaktionen abgewickelt</p>
+            <p>E-payment: Auch elektronischer Zahlungsverkehr genannt, erfolgt bargeldlos, werden durch Transaktionen abgewickelt</p>
         </details>
+
         <table class="def">
             <tr>
                 <th colspan="2">Zahlungsformen im Alltag</th>
@@ -14,32 +16,32 @@
             </tr>
             <tr>
                 <td>Online-Shopping</td>
-                <td>Apps,Amazon,Zalando</td>
+                <td>Apps, Amazon, Zalando</td>
             </tr>
             <tr>
                 <td>Mobile Zahlungen</td>
-                <td> Apple Pay,Googel Pay fürs Einkaufen</td>
+                <td> Apple Pay, Googel Pay fürs Einkaufen</td>
             </tr>
             <tr>
               <td>Überweisung und Rechnung</td>
               <td>Online-Banking</td>
           </tr>            
           <tr>
-            <td>Streaming-Dienste/Abonnements</td>
-            <td>Netflix,Spotify</td>
+            <td>Streaming-Dienste / Abonnements</td>
+            <td>Netflix, Spotify</td>
         </tr>            
         <tr>
-          <td>Öffentliche Verkehrsmittel/Parken</td>
-          <td>Fahrkarten/Parkticket</td>
+          <td>Öffentliche Verkehrsmittel / Parken</td>
+          <td>Fahrkarten / Parkticket</td>
       </tr>
         </table>
 
         <table class="def">
           <tr>
-            <td colspan="2">Trends und Entwicklungen</td>
+            <th colspan="2">Trends und Entwicklungen</th>
           <tr>
-            <td>Buy now pay later</td>
-         <td> Klarna, Afterpay</td>
+            <th>Buy now pay later</th>
+            <th> Klarna, Afterpay</th>
         </tr>
           <tr>
             <td>Digitaliserung von Geld</td>
@@ -47,7 +49,7 @@
           </tr>
           <tr>
             <td>Mobile wallets/Super-Apps</td>
-            <td> WeChat,Grab</td>
+            <td> WeChat, Grab</td>
           </tr>
         </table>
     </div>

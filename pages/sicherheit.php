@@ -17,17 +17,9 @@
       wird die Sicherheit im digitalen Zahlungsverkehr zunehmend wichtiger.</p>
     <h2>Bekannte Betrugsarten (Umfrageergebnisse)</h2>
     <p>Welche dieser Arten von Betrug bei Zahlungen über das Internet sind Ihnen bekannt?</p>
-    <ul class="bar-chart">
-        <li><div class="bar" style="width: 75%;">Phishing (75%)</div></li>
-        <li><div class="bar" style="width: 74%;">Identitätsdiebstahl (74%)</div></li>
-        <li><div class="bar" style="width: 73%;">Kreditkartenbetrug (73%)</div></li>
-        <li><div class="bar" style="width: 50%;">Nicht autorisierte Abbuchungen (50%)</div></li>
-        <li><div class="bar" style="width: 12%;">Vishing (12%)</div></li>
-        <li><div class="bar" style="width: 10%;">Quishing (10%)</div></li>
-        <li><div class="bar" style="width: 9%;">Smishing (9%)</div></li>
-        <li><div class="bar" style="width: 11%;">Keine der Genannten/Weiß nicht (11%)</div></li>
-      </ul>
-  </div>
+    <div class="bar-chart">
+        <img class="Design ohne Titel (1).png" src="/assets/pic/Design ohne Titel (1).png" alt="bar-chart">
+  </div></div>
 
   <!-- Rechte Spalte: Akkordeons -->
   <div class="sidebar">
